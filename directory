@@ -1,0 +1,6 @@
+table/
+  login.html
+  styles/
+    login.css
+  scripts/
+    login.js
