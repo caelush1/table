@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="profil.css">
+    <script type="module" src="#"></script>
+<body>
+<ul class="nav">  
+    <a href="profile.html"><img src="WhatsApp Image 2025-03-17 at 21.12.31_757b38a4.jpg" alt="Kenzie"></a>
+    <li>
+        <table style="margin: auto;">
+                <tr>
+                    <td>Name</td>
+                    <td>Kenzie Otto Tjoa</td>
+                </tr>
+                <tr>
+                    <td>Religion</td>
+                    <td>Buddhist</td>
+                </tr>        
+                <tr>
+                    <td>Stream</td>
+                    <td>Science</td>
+                </tr>
+                <tr>
+                    <td>Class</td>
+                    <td>JFK</td>
+                </tr>
+                <tr>
+                    <td>Grade</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td style="column-span: all;"><a href="home.html">Back</a></td>
+
+                </tr>
+                    
+                
+        </table> 
+    </li>
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;padding-left: 15%; background-image: linear-gradient(to bottom, purple, magenta, pink, cyan, blue); background-attachment: fixed; background-repeat: no-repeat; width: 60%;"  class="aaa">
+    <ul>
+        <li><h1>Profile</h1></li>
+        <li><h2>Scores</h2></li>
+        <li><table>
+            <tr>
+                <th>Subject</th>
+                <th>Avaerage</th>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Mandarin</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Biology</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Chemestry</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Digital Literacy</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Civics</td>
+            <td>100</td>
+            </tr>
+            <tr>
+                <td>Religion</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <th>Avarage</th>
+                <th>100</th>
+            </tr>
+    </table></li>
+    <h2>Merit/Demerit</h2>
+    <li>
+        <table class="mD">
+            <tr>
+                <th>details</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>being helpful</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>----</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>----</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>----</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>----</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>----</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>----</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>----</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>----</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>----</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>----</td>
+                <td>10</td>
+            </tr>
+            
+        </table>
+    </li>
+    <li>
+        <h1>Attendence</h1>
+        <table class="Attendence">
+            <tr>
+                <td>Absent</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Sick</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Permission</td>
+                <td>10</td>
+            </tr>
+            
+        </table>
+    </li>
+    <li>
+        <div id="myChart" style="width:100%; max-width:600px; height:12%; padding-top: 10px;"></div>
+
+
+        <script>
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+            
+            function drawChart() {
+            
+            // Set Data
+            const data = google.visualization.arrayToDataTable([
+                ['Contry', 'Mhl'],
+                ['Roam',90],
+                ['Jungle',2],
+                ['Gold',3],
+                ['Exp',5],
+            
+            ]);
+            
+            // Set Options
+            const options = {
+                title:'Roles'
+            };
+            
+            // Draw
+            const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+            chart.draw(data, options);
+            
+            }
+        </script>
+    </li>
+    </ul>
+</div>
+</body>
+</html>
